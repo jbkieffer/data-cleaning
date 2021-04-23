@@ -47,4 +47,16 @@ Most of the character encoding issues are now fixed.
 
 ---
 
+## Trim whitespace
 
+When we try to sort or match data we may encounter errors caused by additional whitespace at the beginning or end of a piece of data. TThe source of these problems can be hard to spot visually since the characters that create whitespace are not rendered in Excel's user interface. A common early step in any data cleaning process is to trim whitespace. We can do this in Excel using a formula.
+
+Be sure you are working in your new saved file in the `/outputs` directory, e.g.: `/outputs/doaj-article-sample-clean.csv`
+
+Instructions at https://support.microsoft.com/en-us/office/trim-function-410388fa-c5df-49c6-b16c-9e5630b479f9
+
+---
+
+## Resources
+
+Microsoft Office Support, "Top 10 ways to clean your data" https://support.microsoft.com/en-us/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19
