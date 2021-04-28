@@ -27,11 +27,8 @@ Follow these steps to choose a specific character encoding when opening a data f
      - Since this is a .csv (comma separated file), change the delimiter from Tab to Comma
 	 - ![Excel Text Import Wizard Step 2 screen](/img/text-import-2.PNG "Import data step 2")
    - Step 3:
-     - **possibly revise** Leave all columns in General format, meaning that Excel will interpret the contents on its own
-	 - ![Excel Text Import Wizard Step 3 screen](/img/text-import-3.PNG "Import data step 3")
-	 - If there is data you don't want Excel to mess with (e.g.: Dates), change the format of the column to Text
+     - We don't want Excel to mess with the `Dates` column, so highlight that column and change the format of the column to Text
 	 - ![Excel Text Import Wizard Step 3 screen](/img/text-import-3-date-text.PNG "Import data step 3")
-	 - **possible lesson item** break Dates into M D Y columns - can only do this if the column starts as Text
    - Step 4:
      - Import the data into the existing blank worksheet starting at cell A1
 	 - ![Excel Text Import Wizard Step 4 screen](/img/text-import-4.PNG "Import data step 4")
