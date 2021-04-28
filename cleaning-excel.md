@@ -80,6 +80,38 @@ Your `Title` data is now clean. If you want to practice these steps again, there
 
 ---
 
+## Check for Missing Data
+
+Another common data cleaning step is checking for missing data. Blank cells could interfere with our uses for the data. In some cases, data creators use cell values such as 0, 999, or N/A to indicate missing data; these values can also interfere with our work. In Excel, we can check for missing data using filters.
+
+Be sure you are working in your saved file in the `/outputs` directory, e.g.: `/outputs/doaj-article-sample-clean.csv`
+
+1. Click on Data in Excel's menu bar
+2. In the Data ribbon, click on Filter. The icon looks like a funnel.
+   - Each column header will receive a down arrow icon
+   - ![Active filters in an Excel spreadsheet](/img/filter.png "Activate filters for an Excel spreadsheet")
+3. In the `DOI` column, click on the Filter arrow. There are many ways to filter; for our purposes, we will use the list of cell contents at the bottom of the Filter menu.
+   - In the list of DOIs, uncheck `(Select All)`
+   - ![De-select all DOI results in Excel filter menu](/img/filter-doi-1.png "Uncheck (Select All)")
+   - Scroll to the bottom of the list of DOIs and check `(Blanks)`
+   - ![Select blank DOI cells in Excel filter menu](/img/filter-doi-2.png "Check (Blanks)")
+   - Excel now only shows us the 23 rows where the DOI cell is blank 
+4. Depending on our needs, we could remove these rows to a different file for further processing. For our purposes, we will leave them in the current file.
+5. We need to clear the `DOI` filter when we are finished. With Excel, you can layer filters to find very specific slices of data, e.g.: all rows with missing DOIs and missing license terms. However, it's easy to forget to clear filters; this can lead to incomplete results in subsequent operations.
+   - In the `DOI` column, click on the Filter icon. Since the column is filtered, the down arrow has changed to a funnel.
+   - Select `Clear Filter from "DOI"
+   - ![Clear filter from DOI column](/img/clear-filter.png "Select "Clear Filter from DOI")
+   
+We now know that 23 rows of data do not contain DOIs. If you want to practice these steps again, you can check for missing data in the `License` and `Language` columns.
+
+---
+
+## Consolidate Terms
+
+
+
+---
+
 ## Resources
 
 Microsoft Office Support, "Top 10 ways to clean your data" https://support.microsoft.com/en-us/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19
