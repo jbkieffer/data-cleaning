@@ -1,5 +1,11 @@
 # Data Cleaning with MS Excel
 
+## Software Installation
+
+This tutorial assumes that you have a recent version of MS Excel installed on your computer, or that you have access to Excel through Office365. If you are using Office365, open Excel in the desktop version of the software to follow along completely.
+
+---
+
 ## Character Encoding
 
 When we open a data file in MS Excel, sometimes we will see that characters don't correctly display. Find the sample data file `doaj-article-sample.csv` in the `data` directory of your downloaded materials. Double click the file to open it with Excel. Scan through the `Title` and `Authors` columns to see some examples of this problem.
@@ -44,7 +50,7 @@ Many of the character encoding issues are now fixed.
 
 ---
 
-## Trim whitespace
+## Trim Whitespace
 
 When we try to sort or match data we may encounter errors caused by additional whitespace at the beginning or end of a piece of data. The source of these problems can be hard to spot visually since the characters that create whitespace are not rendered in Excel's user interface. A common early step in any data cleaning process is to trim whitespace. We can do this in Excel using a formula. We are going to practice these steps using the data in the `Title` column.
 
