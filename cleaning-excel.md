@@ -51,9 +51,9 @@ When we try to sort or match data we may encounter errors caused by additional w
 Be sure you are working in your new saved file in the `/outputs` directory, e.g.: `/outputs/doaj-article-sample-clean.csv`
 
 1. Add two empty columns to the right of the `Title` column.
+   - ![Excel Add a blank column](/img/add-column.png "Add a new column in Excel")
    - One of these columns will be for the formula. Name this column `TrimTitleFormula`
    - The other column will be for the text output of the formula. Name this column `TrimmedTitle`
-   - ![Excel Add a blank column](/img/add-column.png "Add a new column in Excel")
    - ![New Excel columns](/img/new-columns.PNG "Two new Excel columns")
 2. In the first empty cell of the `TrimTitleFormula` column, type the formula `=TRIM(A2)`
    - ![Excel TRIM formula in a spreadsheet](/img/trim-formula.PNG "Enter the TRIM formula in cell B2")
@@ -66,7 +66,7 @@ Be sure you are working in your new saved file in the `/outputs` directory, e.g.
    - When you are finished, the column will fill with the trimmed text from the `Title` column
    - ![Excel filled column of trimmed Title data](/img/filled-title.PNG "Formula applied to all Title cells")
 5. The column `TrimTitleFormula` appears to contain cleaned up Title data, but Excel is tricking you. The cells really contain formulas and can't be used for anything in their current state. We need to turn the formula results into actual text using the second empty column, `TrimmedTitle`:
-   - Highlight all of the values in the `TrimTitleFormula` column, from B2 to B1002. A handy keyboard shortcut is to highlight cell B2 and then type `Shift + Control (Command on a Mac) + the down arrow`. Copy these values using your preferred method.
+   - Highlight all of the values in the `TrimTitleFormula` column, from B2 to B1002. A handy keyboard shortcut is to highlight cell B2 and then type `Shift + Control + down arrow` (`Shift + Command + down arrow` on a Mac). Copy these values using your preferred method.
    - Now click into cell C2, the first empty cell in the column `TrimmedTitle`.
    - Right click (command click on a Mac) cell C2 and choose `Paste Values` - the icon looks like a clipboard with the numbers 123 on top.
    - ![Paste values into an Excel column](/img/paste-values.png "Paste values into an Excel column")
@@ -101,7 +101,7 @@ Be sure you are working in your saved file in the `/outputs` directory, e.g.: `/
 5. We need to clear the `DOI` filter when we are finished. With Excel, you can layer filters to find very specific slices of data, e.g.: all rows with missing DOIs and missing license terms. However, it's easy to forget to clear filters; this can lead to incomplete results in subsequent operations.
    - In the `DOI` column, click on the `Filter` icon. Since the column is filtered, the down arrow has changed to a funnel.
    - Select `Clear Filter from "DOI"`
-   - ![Clear filter from DOI column](/img/clear-filter.png "Select "Clear Filter from DOI"")
+   - ![Clear filter from DOI column](/img/clear-filter.png "Select Clear Filter from DOI")
    
 We now know that 23 rows of data do not contain DOIs. If you want to practice these steps again, you can check for missing data in the `License` and `Language` columns.
 
