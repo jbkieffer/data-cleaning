@@ -75,6 +75,7 @@ Be sure you are working in your new saved file in the `/outputs` directory, e.g.
    - Highlight the `TrimTitleFormula` column and delete it from the spreadsheet (the entire column, not just the cell contents).
    - Repeat this step for the original `Title` column
    - Change the name of the column `TrimmedTitle` to `Title`
+7. Save these changes to your file.
    
 Your `Title` data is now clean. If you want to practice these steps again, there are also extra whitespace characters in the `Publisher` column.
 
@@ -108,7 +109,28 @@ We now know that 23 rows of data do not contain DOIs. If you want to practice th
 
 ## Consolidate Terms
 
+Imposing consistency on data is another common cleaning step. Inconsistent use of terms, abbreviations, decimals, and other data elements can limit the usefulness of our data and hinder analysis. In Excel, we can consolidate terms using Find and Replace.
 
+Be sure you are working in your saved file in the `/outputs` directory, e.g.: `/outputs/doaj-article-sample-clean.csv`
+
+We are going to replace the EN abbreviation for Language with the full term English. We are not going to fill in cells where the Language data is missing.
+
+1. Highlight the `Language` column. This prevents us from accidentally overwriting data in other colums.
+2. Bring up the Find and Replace window using one of these methods:
+   - Use the keyboard shortcut Control + F (Command + F on a Mac). In the resulting window, choose the Replace tab.
+   - Click on Home in Excel's menu bar. In the Home ribbon, click on Find & Select. The icon looks like a magnifying glass. Click on Replace.
+   - ![Excel's Replace window](/img/replace.png "Replace window")
+3. Fill in the window as follows:
+   - Find what: EN
+   - Replace with: English
+4. Click Options. We need to make the search more exact for efficiency
+   - Check Match case
+   - Check Match entire cell contents
+   - ![Completed options in Excel Replace window](/img/replace-options.png "Complete options for data matching")
+5. Click Find Next several times to confirm that Excel is only finding cells containing EN in the `Language` column
+   - Once you are satisfied, click Replace to replace values one by one, or Replace All to replace all values at once
+   - When it's finished, Excel should have made 871 replacements
+6. Save these changes to your file.
 
 ---
 
