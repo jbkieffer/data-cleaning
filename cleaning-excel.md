@@ -10,7 +10,7 @@ This tutorial assumes that you have a recent version of MS Excel installed on yo
 
 When we open a data file in MS Excel, sometimes we will see that characters don't correctly display. Find the sample data file `doaj-article-sample.csv` in the `data` directory of your downloaded materials. Double click the file to open it with Excel. Scan through the `Title` and `Authors` columns to see some examples of this problem.
 
-![Character display problems in an Excel spreadsheet](/img/encoding-errors.PNG "Example encoding errors")
+![Character display problems in an Excel spreadsheet](/img/excel/encoding-errors.PNG "Example encoding errors")
 
 To prevent this problem, we need to open the file differently. Close the data file and don't save any changes. Open a new blank Excel workbook.
 
@@ -19,7 +19,7 @@ Follow these steps to choose a specific character encoding when opening a data f
 2. In the `Data` ribbon, choose `From Text`
 3. Navigate to the sample data file `doaj-article-sample.csv` and click `Import`
 
-![MS Excel import data file screen](/img/choose-file.PNG "Import a file into Excel")
+![MS Excel import data file screen](/img/excel/choose-file.PNG "Import a file into Excel")
 
 4. Follow the steps of the `Text Import Wizard`:
    - Step 1:
@@ -27,26 +27,26 @@ Follow these steps to choose a specific character encoding when opening a data f
 	 - Start import at row 1
 	 - File origin: Change from `Windows (ANSI)` to `65001 : Unicode (UTF-8)`
 	 - Check the option `My data has headers`
-	 - ![Excel Text Import Wizard Step 1 screen](/img/text-import-1.PNG "Import data step 1")
+	 - ![Excel Text Import Wizard Step 1 screen](/img/excel/text-import-1.PNG "Import data step 1")
 	 - Click `Next`
    - Step 2:
      - Since this is a .csv (comma separated file), change the delimiter from `Tab` to `Comma`
-	 - ![Excel Text Import Wizard Step 2 screen](/img/text-import-2.PNG "Import data step 2")
+	 - ![Excel Text Import Wizard Step 2 screen](/img/excel/text-import-2.PNG "Import data step 2")
    - Step 3:
      - We don't want Excel to mess with the `Dates` column, so highlight that column and change the format of the column to `Text`
-	 - ![Excel Text Import Wizard Step 3 screen](/img/text-import-3-date-text.PNG "Import data step 3")
+	 - ![Excel Text Import Wizard Step 3 screen](/img/excel/text-import-3-date-text.PNG "Import data step 3")
    - Step 4:
      - Import the data into the existing blank worksheet starting at cell A1
-	 - ![Excel Text Import Wizard Step 4 screen](/img/text-import-4.PNG "Import data step 4")
+	 - ![Excel Text Import Wizard Step 4 screen](/img/excel/text-import-4.PNG "Import data step 4")
 	 - Click `OK`
 
 Many of the character encoding issues are now fixed.
 
-![Character display corrected in an Excel spreadsheet](/img/encoding-fixed.PNG "Example encoding repairs")
+![Character display corrected in an Excel spreadsheet](/img/excel/encoding-fixed.PNG "Example encoding repairs")
 
 **Don't overwrite your original raw data!** Save the data as a new file by clicking `File` > `Save As`. Change to the `outputs` directory and save your file with a new name. You can keep the file in .csv format or save it as an Excel (.xlsx) file.
 
-![Save the imported data as a new file](/img/save-new-file.PNG "Save imported data to a new file")
+![Save the imported data as a new file](/img/excel/save-new-file.PNG "Save imported data to a new file")
 
 ---
 
@@ -57,25 +57,25 @@ When we try to sort or match data we may encounter errors caused by additional w
 Be sure you are working in your new saved file in the `/outputs` directory, e.g.: `/outputs/doaj-article-sample-clean.csv`
 
 1. Add two empty columns to the right of the `Title` column.
-   - ![Excel Add a blank column](/img/add-column.png "Add a new column in Excel")
+   - ![Excel Add a blank column](/img/excel/add-column.png "Add a new column in Excel")
    - One of these columns will be for the formula. Name this column `TrimTitleFormula`
    - The other column will be for the text output of the formula. Name this column `TrimmedTitle`
-   - ![New Excel columns](/img/new-columns.PNG "Two new Excel columns")
+   - ![New Excel columns](/img/excel/new-columns.PNG "Two new Excel columns")
 2. In the first empty cell of the `TrimTitleFormula` column, type the formula `=TRIM(A2)`
-   - ![Excel TRIM formula in a spreadsheet](/img/trim-formula.PNG "Enter the TRIM formula in cell B2")
+   - ![Excel TRIM formula in a spreadsheet](/img/excel/trim-formula.PNG "Enter the TRIM formula in cell B2")
 3. Press Enter. The formula will disappear in the cell and be replaced by the formula results, the trimmed text from cell A2
    - The formula doesn't change the text if there is no additional whitespace to trim
 4. Apply the formula to the rest of the data in the `Title` column:
    - Highlight cell B2, which contains the `TRIM` formula 
    - Drag the little green square at the bottom right of the cell all the way to the bottom of the column (row 1002). This will fill the empty cells with the formula and adjust the cell value that the formula is applied to.
-   - ![Excel click and drag to copy a formula down a column](/img/drag-trim.png "Drag down cell B2 to copy the formula")
+   - ![Excel click and drag to copy a formula down a column](/img/excel/drag-trim.png "Drag down cell B2 to copy the formula")
    - When you are finished, the column will fill with the trimmed text from the `Title` column
-   - ![Excel filled column of trimmed Title data](/img/filled-title.PNG "Formula applied to all Title cells")
+   - ![Excel filled column of trimmed Title data](/img/excel/filled-title.PNG "Formula applied to all Title cells")
 5. The column `TrimTitleFormula` appears to contain cleaned up Title data, but Excel is tricking you. The cells really contain formulas and can't be used for anything in their current state. We need to turn the formula results into actual text using the second empty column, `TrimmedTitle`:
    - Highlight all of the values in the `TrimTitleFormula` column, from B2 to B1002. A handy keyboard shortcut is to highlight cell B2 and then type `Shift + Control + down arrow` (`Shift + Command + down arrow` on a Mac). Copy these values using your preferred method.
    - Now click into cell C2, the first empty cell in the column `TrimmedTitle`.
    - Right click (command click on a Mac) cell C2 and choose `Paste Values` - the icon looks like a clipboard with the numbers 123 on top.
-   - ![Paste values into an Excel column](/img/paste-values.png "Paste values into an Excel column")
+   - ![Paste values into an Excel column](/img/excel/paste-values.png "Paste values into an Excel column")
    - The text of the trimmed Titles will be inserted into the `TrimmedTitle` column
 6. To keep your cleaned data file usable by other computer programs, it's important to remove dirty data and intermediate steps in the cleaning process. It's okay to delete columns in this version of your data, because you have saved it separately from your raw data.
    - Highlight the `TrimTitleFormula` column and delete it from the spreadsheet (the entire column, not just the cell contents).
@@ -96,18 +96,18 @@ Be sure you are working in your saved file in the `/outputs` directory, e.g.: `/
 1. Click on `Data` in Excel's menu bar
 2. In the `Data` ribbon, click on `Filter`. The icon looks like a funnel.
    - Each column header will receive a down arrow icon
-   - ![Active filters in an Excel spreadsheet](/img/filter.png "Activate filters for an Excel spreadsheet")
+   - ![Active filters in an Excel spreadsheet](/img/excel/filter.png "Activate filters for an Excel spreadsheet")
 3. In the `DOI` column, click on the `Filter` arrow. There are many ways to filter; for our purposes, we will use the list of cell contents at the bottom of the `Filter` menu.
    - In the list of DOIs, uncheck `(Select All)`
-   - ![De-select all DOI results in Excel filter menu](/img/filter-doi-1.png "Uncheck (Select All)")
+   - ![De-select all DOI results in Excel filter menu](/img/excel/filter-doi-1.png "Uncheck (Select All)")
    - Scroll to the bottom of the list of DOIs and check `(Blanks)`
-   - ![Select blank DOI cells in Excel filter menu](/img/filter-doi-2.png "Check (Blanks)")
+   - ![Select blank DOI cells in Excel filter menu](/img/excel/filter-doi-2.png "Check (Blanks)")
    - Excel now only shows us 23 rows where the DOI cell is blank 
 4. Depending on our needs, we could remove these rows to a different file for further processing. For our purposes, we will leave them in the current file.
 5. We need to clear the `DOI` filter when we are finished. With Excel, you can layer filters to find very specific slices of data, e.g.: all rows with missing DOIs and missing license terms. However, it's easy to forget to clear filters; this can lead to incomplete results in subsequent operations.
    - In the `DOI` column, click on the `Filter` icon. Since the column is filtered, the down arrow has changed to a funnel.
    - Select `Clear Filter from "DOI"`
-   - ![Clear filter from DOI column](/img/clear-filter.png "Select Clear Filter from DOI")
+   - ![Clear filter from DOI column](/img/excel/clear-filter.png "Select Clear Filter from DOI")
    
 We now know that 23 rows of data do not contain DOIs. If you want to practice these steps again, you can check for missing data in the `License` and `Language` columns.
 
@@ -123,14 +123,14 @@ Be sure you are working in your saved file in the `/outputs` directory, e.g.: `/
 2. Bring up the `Find and Replace` window using one of these methods:
    - Use the keyboard shortcut `Control + F` (`Command + F` on a Mac). In the resulting window, choose the `Replace` tab.
    - Click on `Home` in Excel's menu bar. In the `Home` ribbon, click on `Find & Select`. The icon looks like a magnifying glass. Click on `Replace`.
-   - ![Excel's Replace window](/img/replace.png "Replace window")
+   - ![Excel's Replace window](/img/excel/replace.png "Replace window")
 3. Fill in the window as follows:
    - Find what: EN
    - Replace with: English
 4. Click `Options`. We need to make the search more exact for efficiency
    - Check `Match case`
    - Check `Match entire cell contents`
-   - ![Completed options in Excel Replace window](/img/replace-options.png "Complete options for data matching")
+   - ![Completed options in Excel Replace window](/img/excel/replace-options.png "Complete options for data matching")
 5. Click `Find Next` several times to confirm that Excel is only finding cells containing EN in the `Language` column
    - Once you are satisfied, click `Replace` to replace values one by one, or `Replace All` to replace all values at once
    - When it's finished, Excel should have made 871 replacements
