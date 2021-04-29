@@ -17,7 +17,7 @@ After working through this material, learners will be able to:
 
 These materials were developed using:
 - MS Excel 2016 32-bit
-- OpenRefine 2.7-rc.2
+- OpenRefine 3.4.1
 
 ### Get the Materials
 
