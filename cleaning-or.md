@@ -58,7 +58,7 @@ We have completed two major data cleaning steps while creating a project within 
 
 With OpenRefine, we can check for missing data using facets. Each column of data has its own menu of operations. We will be working to locate missing DOIs in the `DOI` column.
 
-1. Find the `DOI` column in your new OpenRefine project, and click the down arrow beside the column name
+1. Find the `DOI` column in your new OpenRefine project and click the down arrow beside the column name
    - ![OpenRefine column menu](/img/or/column-menu.png "Click the arrow to access the column menu")
 2. In the column menu, choose `Facet`, then `Customized facets`, then `Facet by blank (null or empty string)`
    - ![OpenRefine facet options](/img/or/facet-blank.png "Navigate to Facet by blank")
@@ -88,6 +88,15 @@ With OpenRefine, we can check for missing data using facets. Each column of data
 
 ## Consolidate Terms
 
+We can also use OpenRefine's facets to consolidate terms. We are going to replace the EN abbreviation for `Language` with the full term English. We will not fill in cells where `Language` data is missing.
+
+If you haven't already done so, remove all facets from previous steps.
+
+1. Find the `Language` column in your OpenRefine project and click the down arrow beside the column name
+2. Choose `Facet`, then `Text facet`
+   - ![OpenRefine text facet](/img/or/text-facet.png "Open text facet from the column menu")
+3. The new `Language` facet shows our results:
+   - ![Language text facet](/img/or/facet-language.png "Language text facet")
 
 ---
 
