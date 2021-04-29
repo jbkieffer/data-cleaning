@@ -56,6 +56,33 @@ We have completed two major data cleaning steps while creating a project within 
 
 ## Check for Missing Data
 
+With OpenRefine, we can check for missing data using facets. Each column of data has its own menu of operations. We will be working to locate missing DOIs in the `DOI` column.
+
+1. Find the `DOI` column in your new OpenRefine project, and click the down arrow beside the column name
+   - ![OpenRefine column menu](/img/or/column-menu.png "Click the arrow to access the column menu")
+2. In the column menu, choose `Facet`, then `Customized facets`, then `Facet by blank (null or empty string)`
+   - ![OpenRefine facet options](/img/or/facet-blank.png "Navigate to Facet by blank")
+3. The `Facet / Filter` panel will open on the left. A box using the name of the column we faceted will contain the results of the facet:
+   - `false: 978` indicates that 978 rows are NOT blank at the `DOI` column
+   - `true: 23` indicates that 23 rows ARE blank at the `DOI` column
+   - ![OpenRefine facet results for Facet by blank](/img/or/facet-blank-results.png "Facet results")
+4. To see the 23 rows with missing DOIs, click on `true` in the results. Only rows with missing DOIs will be displayed
+5. To export only these rows, click `Export` at the top right of the screen while the facet is active
+   - Choose a file type that works for you. Depending on your work, good choices include tab- or comma-separated values, Excel, ODF spreadsheet (for LibreOffice Calc), or Google Sheets.
+   - Exporting these rows to a file does not remove them from the OpenRefine project.
+6. To reset the display, click `reset` at the top of the active facet
+   - ![Reset faceted display](/img/or/facet-reset.png "Reset faceted display")
+7. As with Excel, it is possible to layer facets to find very specific slices of data, e.g.: all rows with missing DOIs and missing license terms. To do this, repeat the facet steps above on the `License` column while the `DOI` facet is still active
+   - A `License` facet will appear below the `DOI` facet, containing our results:
+     - `false: 17` indicates that, of 23 rows isolated by the `DOI` facet, 17 rows are NOT blank at the `License` column
+	 - `true: 6` indicates that, of 23 rows isolated by the `DOI` facet, 6 rows ARE blank at the `License` column
+	 - ![Add a second facet](/img/or/add-facet.png "Add a License facet to further slice the data")
+   - To see the 6 rows with missing DOI and missing License data, click on `true` in the `License` facet results
+     - Follow the instructions from step 5 to export only these 6 rows
+8. To remove a facet, click the `X` at the top left of the facet you want to remove
+   - ![Remove one facet](/img/or/remove-facet.png "Remove one facet")
+9. To reset or remove all active facets, click either the `Reset All` or `Remove All` button at the top of the `Facet / Filter` panel
+   - ![Reset or remove all facets](/img/or/remove-facet-all.png "Reset or remove all facets")
 
 ---
 
