@@ -108,7 +108,7 @@ If you want to practice these steps again, you can look for terms to consolidate
 
 ---
 
-### Using Data Cleaned with OpenRefine
+## Using Data Cleaned with OpenRefine
 
 Once we finish cleaning data with OpenRefine, we need to export it in order to use it for our work. The `Export` steps are described in step 5 of the Missing Data section. Depending on your next steps, you can export part or all of the data.
 
@@ -147,6 +147,6 @@ To apply an extracted cleaning step to a different OpenRefine project:
 
 ## Resources
 
-The [Library Carpentry OpenRefine lesson](https://librarycarpentry.org/lc-open-refine/) includes more cleaning steps on this data file, as well as more uses for OpenRefine.
+The [Library Carpentry OpenRefine lesson](https://librarycarpentry.org/lc-open-refine/) includes more cleaning steps using this data file, as well as more uses for OpenRefine.
 
 The [OpenRefine Documentation](https://openrefine.org/documentation.html) contains links to get started and learn more. 
