@@ -147,6 +147,6 @@ To apply an extracted cleaning step to a different OpenRefine project:
 
 ## Resources
 
-The [Library Carpentry OpenRefine lesson](https://librarycarpentry.org/lc-open-refine/) includes more cleaning steps using this data file, as well as more uses for OpenRefine.
+The [Library Carpentry OpenRefine lesson](https://librarycarpentry.org/lc-open-refine/) includes more cleaning steps using this DOAJ data, as well as more uses for OpenRefine.
 
 The [OpenRefine Documentation](https://openrefine.org/documentation.html) contains links to get started and learn more. 
