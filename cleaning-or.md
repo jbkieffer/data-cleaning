@@ -88,7 +88,7 @@ With OpenRefine, we can check for missing data using facets. Each column of data
 
 ## Consolidate Terms
 
-We can also use OpenRefine's facets to consolidate terms. We are going to replace the EN abbreviation for `Language` with the full term English. We will not fill in cells where `Language` data is missing.
+We can also use OpenRefine's facets to consolidate terms. We are going to replace the term "English" in the `Language` column with the abbreviation "EN".
 
 If you haven't already done so, remove all facets from previous steps.
 
@@ -97,7 +97,56 @@ If you haven't already done so, remove all facets from previous steps.
    - ![OpenRefine text facet](/img/or/text-facet.png "Open text facet from the column menu")
 3. The new `Language` facet shows our results:
    - ![Language text facet](/img/or/facet-language.png "Language text facet")
+4. To edit cells containing "English", hover over the result `English 107` and click `edit`
+   - ![Edit cell contents in OpenRefine](/img/or/edit-facet.png "Edit a facet result")
+   - In the text box that appears, change `English` to `EN`, then click `Apply`
+   - ![Apply changes to an edited facet](/img/or/apply-facet-change.png "Click Apply to change the text")
+   - The `Language` facet results now show no cells containing "English" and 978 cells containing "EN"
+5. Close the `Language` facet
+
+If you want to practice these steps again, you can look for terms to consolidate in the `Publisher` column.
+
+---
+
+### Using Data Cleaned with OpenRefine
+
+Once we finish cleaning data with OpenRefine, we need to export it in order to use it for our work. The `Export` steps are described in step 5 of the Missing Data section. Depending on your next steps, you can export part or all of the data.
+
+To export all of the data, remove all facets before you proceed. To export a piece or slice of the data, use one or more facets to display only the rows you want to export.
+
+---
+
+## Replicate Cleaning Steps with OpenRefine
+
+Often, we need to repeat the same cleaning steps on new data, e.g. if we receive a monthly file from a vendor. This is possible in OpenRefine by extracting operation history.
+
+To extract cleaning steps for future use:
+
+1. In the top left of the OpenRefine screen, click the `Undo / Redo` tab
+   - You will see a list of the edits you have made to your data. 
+   - This list won't include any operations for viewing data, e.g. the facets we added in the Missing Data section of this tutorial.
+   - ![OpenRefine undo redo tab](/img/or/undo-redo.png "Click Undo Redo to extract cleaning steps")
+2. Highlight the step or steps you want to extract and click `Extract`
+   - OpenRefine will open the `Extract Operation History` window with JSON code highlighted for you
+   - ![OpenRefine Extract History window](/img/or/extract-history.png "Copy the highlighted code to extract a cleaning step")
+   - Copy that code and paste it into a plain text file, not a Word document. Save the file with your data projects, e.g.: `doaj-cleaning-steps.txt`
+   - Close the `Extract Operation History` window
+
+To apply an extracted cleaning step to a different OpenRefine project:
+
+1. Create your new project in OpenRefine
+2. Open the `Undo / Redo` tab
+3. Click `Apply`
+   - OpenRefine will open the `Apply Operation History` window
+   - Paste the JSON code you copied from a previous project into the empty box
+   - ![OpenRefine Apply History window](/img/or/apply-history.png "Paste JSON code to repeat a cleaning step")
+   - Click `Perform Operations`
+4. Check the affected columns to confirm that your intended edits are complete
 
 ---
 
 ## Resources
+
+The [Library Carpentry OpenRefine lesson](https://librarycarpentry.org/lc-open-refine/) includes more cleaning steps on this data file, as well as more uses for OpenRefine.
+
+The [OpenRefine Documentation](https://openrefine.org/documentation.html) contains links to get started and learn more. 
