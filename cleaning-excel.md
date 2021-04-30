@@ -138,6 +138,23 @@ Be sure you are working in your saved file in the `/outputs` directory, e.g.: `/
 
 ---
 
+## Using Data Cleaned with Excel
+
+When cleaning data with Excel, we save changes as we go. When we are finished, we have a clean data file that we can use in our next work step. However, as we saw in the section on trimming whitespace, we have to remove the steps we took along the way. Additional columns that contain formulas or dirty versions of the data can confuse or prevent our next steps. If we want to keep these columns and formulas for future reference, we need to save multiple versions of the clean data:
+
+- One version that contains the columns showing our cleaning steps
+- One version that contains only the cleaned data
+
+Maintaining multiple copies of data files over time can get confusing and storage-intensive.
+
+---
+
+## Replicate Cleaning Steps with Excel
+
+Unlike OpenRefine, there is no straightforward way to extract cleaning steps from Excel for future use. One possible way to do this with Excel is to save versions of data files that show the cleaning steps, as discussed in the previous section. Another way to do this is to document the cleaning steps taken, including formulas, filters, find/replace edits, and possibly screenshots, in a separate document that can be referred to during data cleaning. However, this is documentation, not replication. When you clean a new data file, you will still have to manually apply every step, even if you can refer to documentation to inform those steps.
+
+---
+
 ## Resources
 
 Microsoft Office Support, "Top 10 ways to clean your data" https://support.microsoft.com/en-us/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19
