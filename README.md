@@ -4,7 +4,7 @@
 
 ### Repository Contents
 
-This repository contains workshop materials for teaching some data cleaning steps using both MS Excel and OpenRefine. The steps are detailed in Markdown files specific to each software tool. Some steps are illustrated with screenshots. The data file is a slightly modified version of the dataset used in the [Library Carpentry OpenRefine lesson](https://librarycarpentry.org/lc-open-refine/)[^1]. This workshop can be delivered in 45-60 minutes.
+This repository contains workshop materials for teaching some data cleaning steps using both MS Excel and OpenRefine. The steps are detailed in Markdown files specific to each software tool. Some steps are illustrated with screenshots. The data file is a slightly modified version of the dataset used in the [Library Carpentry OpenRefine lesson](https://librarycarpentry.org/lc-open-refine/)[1]. This workshop can be delivered in 45-60 minutes.
 
 ### Learning Outcomes
 
@@ -45,4 +45,4 @@ CC-BY-4.0
 
 ---
 
-[^1]: Erin Carillo (Ed.), Owen Stephens (Ed.), Juliane Schneider (Ed.), Paul R. Pival (Ed.), Kristin Lee (Ed.), Carmi Cronje (Ed.), James Baker, Christopher Erdmann, Tim Dennis, mhidas, Daniel Bangert, Evan Williamson, … Jeffrey Oliver. (2019, July). LibraryCarpentry/lc-open-refine: Library Carpentry: OpenRefine, June 2019 (Version v2019.06.1). Zenodo. [http://doi.org/10.5281/zenodo.3266144](https://doi.org/10.5281/zenodo.3266144)
+[1]: Erin Carillo (Ed.), Owen Stephens (Ed.), Juliane Schneider (Ed.), Paul R. Pival (Ed.), Kristin Lee (Ed.), Carmi Cronje (Ed.), James Baker, Christopher Erdmann, Tim Dennis, mhidas, Daniel Bangert, Evan Williamson, … Jeffrey Oliver. (2019, July). LibraryCarpentry/lc-open-refine: Library Carpentry: OpenRefine, June 2019 (Version v2019.06.1). Zenodo. [http://doi.org/10.5281/zenodo.3266144](https://doi.org/10.5281/zenodo.3266144)
