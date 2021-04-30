@@ -115,7 +115,7 @@ We now know that 23 rows of data do not contain DOIs. If you want to practice th
 
 ## Consolidate Terms
 
-Imposing consistency on data is another common cleaning step. Inconsistent use of terms, abbreviations, decimals, and other data elements can limit the usefulness of our data and hinder analysis. In Excel, we can consolidate terms using `Find and Replace`. We are going to replace the EN abbreviation for `Language` with the full term English. We are not going to fill in cells where `Language` data is missing.
+Imposing consistency on data is another common cleaning step. Inconsistent use of terms, abbreviations, decimals, and other data elements can limit the usefulness of our data and hinder analysis. In Excel, we can consolidate terms using `Find and Replace`. We are going to replace the term "English" in the `Language` column with the abbreviation "EN".
 
 Be sure you are working in your saved file in the `/outputs` directory, e.g.: `/outputs/doaj-article-sample-clean.csv`
 
@@ -125,15 +125,15 @@ Be sure you are working in your saved file in the `/outputs` directory, e.g.: `/
    - Click on `Home` in Excel's menu bar. In the `Home` ribbon, click on `Find & Select`. The icon looks like a magnifying glass. Click on `Replace`.
    - ![Excel's Replace window](/img/excel/replace.png "Replace window")
 3. Fill in the window as follows:
-   - Find what: EN
-   - Replace with: English
+   - Find what: English
+   - Replace with: EN
 4. Click `Options`. We need to make the search more exact for efficiency
    - Check `Match case`
    - Check `Match entire cell contents`
    - ![Completed options in Excel Replace window](/img/excel/replace-options.png "Complete options for data matching")
-5. Click `Find Next` several times to confirm that Excel is only finding cells containing EN in the `Language` column
+5. Click `Find Next` several times to confirm that Excel is only finding cells containing "English" in the `Language` column
    - Once you are satisfied, click `Replace` to replace values one by one, or `Replace All` to replace all values at once
-   - When it's finished, Excel should have made 871 replacements
+   - When it's finished, Excel should have made 107 replacements
 6. Save these changes to your file.
 
 ---
