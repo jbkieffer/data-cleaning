@@ -47,6 +47,10 @@ Jamene Brooks-Kieffer, Data Services Librarian, University of Kansas
 
 CC-BY-4.0
 
+## Citation
+
+Brooks-Kieffer, Jamene (2021, May). Data Cleaning Throwdown: Comparing data cleaning steps using MS Excel and OpenRefine. https://github.com/jbkieffer/data-cleaning.
+
 ---
 
 <a name="footnote1">1</a>: Erin Carillo (Ed.), Owen Stephens (Ed.), Juliane Schneider (Ed.), Paul R. Pival (Ed.), Kristin Lee (Ed.), Carmi Cronje (Ed.), James Baker, Christopher Erdmann, Tim Dennis, mhidas, Daniel Bangert, Evan Williamson, … Jeffrey Oliver. (2019, July). LibraryCarpentry/lc-open-refine: Library Carpentry: OpenRefine, June 2019 (Version v2019.06.1). Zenodo. [http://doi.org/10.5281/zenodo.3266144](https://doi.org/10.5281/zenodo.3266144)
