@@ -16,7 +16,7 @@ After working through this material, learners will be able to:
 ### Software and Setup
 
 These materials were developed using:
-- MS Excel 2016 32-bit
+- MS Excel 2016 32-bit for Windows
 - OpenRefine 3.4.1
 
 Versions of Excel from 2016 forward should work for this workshop, including versions installed from an Office365 subscription. Your version may not quite match the screenshots. The formulas will be the same, although some of the menu-driven steps may be slightly different.
