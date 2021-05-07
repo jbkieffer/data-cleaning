@@ -13,17 +13,21 @@ After working through this material, learners will be able to:
 - Compare two software tools commonly used to clean tabular data
 - List advantages and disadvantages of each tool for data cleaning operations
 
-### Software
+### Software and Setup
 
 These materials were developed using:
 - MS Excel 2016 32-bit
 - OpenRefine 3.4.1
 
+Versions of Excel from 2016 forward should work for this workshop, including versions installed from an Office365 subscription. Your version may not quite match the screenshots. The formulas will be the same, although some of the menu-driven steps may be slightly different.
+
+Older versions of OpenRefine will not offer some of the features demonstrated in this workshop. It is strongly encouraged that you upgrade any existing OpenRefine installation you have. Links to instructions and help are available in the [Data Cleaning with OpenRefine](https://github.com/jbkieffer/data-cleaning/blob/main/cleaning-or.md#software-installation) file.
+
 ### View the Materials
 
-View [data cleaning using Excel](https://github.com/jbkieffer/data-cleaning/blob/main/cleaning-excel.md) in the file `cleaning-excel.md`.
+View [Data Cleaning with MS Excel](https://github.com/jbkieffer/data-cleaning/blob/main/cleaning-excel.md) in the file `cleaning-excel.md`.
 
-View [data cleaning using OpenRefine](https://github.com/jbkieffer/data-cleaning/blob/main/cleaning-or.md) in the file `cleaning-or.md`.
+View [Data Cleaning with OpenRefine](https://github.com/jbkieffer/data-cleaning/blob/main/cleaning-or.md) in the file `cleaning-or.md`.
 
 ### Get the Materials
 
