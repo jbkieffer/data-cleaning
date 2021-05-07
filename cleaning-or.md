@@ -8,7 +8,7 @@ Launch OpenRefine on Windows by finding the file `openrefine.exe` inside the dir
 
 When you launch OpenRefine, a command line window will open first, followed by a new tab or window in your default browser. Ignore the command line window; you will work in the browser. OpenRefine does not require an internet connection and is not running in the cloud. It is using your browser as its user interface.
 
-See the [OpenRefine Documentation](https://docs.openrefine.org/manual/running) for help with running OpenRefine.
+See the OpenRefine Documentation for detailed help with [installing or upgrading OpenRefine](https://docs.openrefine.org/manual/installing#installing-or-upgrading) or with [running OpenRefine](https://docs.openrefine.org/manual/running).
 
 ---
 
@@ -110,7 +110,7 @@ If you want to practice these steps again, you can look for terms to consolidate
 
 ## Using Data Cleaned with OpenRefine
 
-Once we finish cleaning data with OpenRefine, we need to export it in order to use it for our work. The `Export` steps are described in step 5 of the Missing Data section. Depending on your next steps, you can export part or all of the data.
+Once we finish cleaning data with OpenRefine, we need to export it in order to use it for our work. The `Export` steps are described in step 5 of the [Missing Data section](https://github.com/jbkieffer/data-cleaning/blob/main/cleaning-or.md#check-for-missing-data). Depending on your next steps, you can export part or all of the data.
 
 To export all of the data, remove all facets before you proceed. To export a piece or slice of the data, use one or more facets to display only the rows you want to export.
 
